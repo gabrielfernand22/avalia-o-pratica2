@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista Total - Automobilismo e Velocidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER E MENU DE NAVEGAÇÃO -->
+    <header class="topo">
+        <div class="container header-conteudo">
+            <div class="logo">
+                <span class="icone-logo">🏁</span>
+                <div>
+                    <h1>PISTA TOTAL</h1>
+                    <p>Automobilismo e Velocidade</p>
+                </div>
+            </div>
+            <nav class="menu">
+                <a href="#inicio" class="link-menu ativo">Início</a>
+                <a href="#eventos" class="link-menu">Eventos</a>
+                <a href="#noticias" class="link-menu">Notícias</a>
+                <a href="#video" class="link-menu">Vídeo</a>
+                <a href="#contato" class="link-menu">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CARROSSEL DE BANNERS (INÍCIO) -->
+    <section id="inicio" class="carrossel">
+        <div class="slide ativo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXqJHJD5j1S7BjKR1v5sqodBl0dCPbF3Sdo4BtxC-iw&s=10"
+                alt="Carro de corrida na pista em alta velocidade">
+            <div class="banner-texto">
+                <h2>O mundo da <span>velocidade</span></h2>
+                <p>Notícias, eventos, curiosidades e tudo sobre automobilismo.</p>
+                <a href="#eventos" class="btn-vermelho">Explore o Conteúdo &gt;</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWAauW1bvFY-DtrPl2ai0M4CYHU5onOJk_ghaa6hs1w&s=10"
+                alt="Grid de largada de competição automobilística">
+            <div class="banner-texto">
+                <h2>A emoção das <span>grandes pistas</span></h2>
+                <p>Acompanhe os calendários, campeonatos e os bastidores das equipes.</p>
+                <a href="#noticias" class="btn-vermelho">Ver Notícias &gt;</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="img/f1.jpg" alt="Tecnologia e aerodinâmica nas pistas">
+            <div class="banner-texto">
+                <h2>Tecnologia e <span>Adrenalina</span></h2>
+                <p>Os bastidores da engenharia por trás das máquinas mais rápidas do planeta.</p>
+                <a href="#video" class="btn-vermelho">Assistir Vídeo &gt;</a>
+            </div>
+        </div>
+
+        <!-- Controles do Carrossel -->
+        <button type="button" class="controle prev" id="btn-voltar" aria-label="Banner anterior">&#10094;</button>
+        <button type="button" class="controle next" id="btn-avancar" aria-label="Próximo banner">&#10095;</button>
+
+        <!-- Indicadores (Bolinhas) -->
+        <div class="indicadores">
+            <span class="ponto ativo" data-index="0"></span>
+            <span class="ponto" data-index="1"></span>
+            <span class="ponto" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- 3 CARDS INFORMATIVOS -->
+    <section class="diferenciais">
+        <div class="container grid-3">
+            <div class="card-info">
+                <span class="icone-info">🏆</span>
+                <div>
+                    <h3>Cobertura de Eventos</h3>
+                    <p>Principais campeonatos nacionais e internacionais.</p>
+                </div>
+            </div>
+            <div class="card-info">
+                <span class="icone-info">📰</span>
+                <div>
+                    <h3>Notícias Atualizadas</h3>
+                    <p>Tudo sobre o universo do automobilismo em tempo real.</p>
+                </div>
+            </div>
+            <div class="card-info">
+                <span class="icone-info">📅</span>
+                <div>
+                    <h3>Calendário de Corridas</h3>
+                    <p>Datas, horários e circuitos detalhados da temporada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE EVENTOS E VÍDEO -->
+    <section id="eventos" class="secao-conteudo-principal">
+        <div class="container grid-principal">
+
+            <!-- Coluna Esquerda: Próximos Eventos (4 Cards) -->
+            <div class="bloco-esq">
+                <div class="titulo-secao">
+                    <h2>Próximos Eventos</h2>
+                    <div class="linha-vermelha"></div>
+                </div>
+
+                <div class="grid-4-eventos">
+                    <article class="card-evento">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHM3LCWz9goge_4cHArtLHwO8YHqWcqAxJnimuwP5rA&s=10"
+                            alt="Fórmula 1">
+                        <div class="card-corpo">
+                            <h3>Fórmula 1</h3>
+                            <p class="sub-evento">GP do Brasil</p>
+                            <p class="data-evento">📅 08 a 10 Nov</p>
+                        </div>
+                    </article>
+
+                    <article class="card-evento">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQEdBcA0lMyfziBMJnAgUUj3Rxi2oSX2K7VhpIQq4OQ&s=10"
+                            alt="Stock Car">
+                        <div class="card-corpo">
+                            <h3>Stock Car</h3>
+                            <p class="sub-evento">Etapa Goiânia</p>
+                            <p class="data-evento">📅 22 Nov</p>
+                        </div>
+                    </article>
+
+                    <article class="card-evento">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR8MgA_JUVwvzZrEQ_jhwmwBCwIXPtMRHzNAcU7Mqggg&s=10"
+                            alt="Endurance">
+                        <div class="card-corpo">
+                            <h3>Endurance</h3>
+                            <p class="sub-evento">Interlagos 500km</p>
+                            <p class="data-evento">📅 06 Dez</p>
+                        </div>
+                    </article>
+
+                    <article class="card-evento">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcutMOs-FMFAuiJY0Zl1QNQBcWxoA3rU0C7nDe5by1GQ&s=10"
+                            alt="Kart">
+                        <div class="card-corpo">
+                            <h3>Kart Profissional</h3>
+                            <p class="sub-evento">Campeonato Paulista</p>
+                            <p class="data-evento">📅 13 Dez</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Vídeo e Curiosidades JS -->
+            <div class="bloco-dir">
+                <div id="video" class="bloco-video">
+                    <div class="titulo-secao">
+                        <h2>Vídeo em Destaque</h2>
+                        <div class="linha-vermelha"></div>
+                    </div>
+                    <div class="video-responsivo">
+                        <iframe src="https://youtu.be/4fEPDC9rfKM?si=zAxW9U7iNdRiUneX"
+                            title="Vídeo automobilismo em destaque" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Interação JS: Botão Mostrar Curiosidade -->
+                <div class="caixa-curiosidade">
+                    <div class="topo-curiosidade">
+                        <h3>Curiosidade da Velocidade</h3>
+                        <span id="contador-curiosidade" class="badge-contador">0 / 6</span>
+                    </div>
+                    <p id="texto-curiosidade">Clique no botão abaixo para descobrir fatos impressionantes sobre o
+                        automobilismo!</p>
+                    <div class="botoes-curiosidade">
+                        <button type="button" id="btn-curiosidade" class="btn-vermelho">Mostrar curiosidade</button>
+                        <button type="button" id="btn-limpar-curiosidade" class="btn-cinza">Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE / NOTÍCIAS -->
+    <section id="noticias" class="secao-noticias">
+        <div class="container">
+            <div class="titulo-secao">
+                <h2>Sobre o Pista Total & Notícias</h2>
+                <div class="linha-vermelha"></div>
+            </div>
+            <div class="sobre-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAq-4QUdBwEm-_cN1pVuYFBvtHYcIbXgD9Iw_IaKU64g&s=10"
+                    alt="Equipe nos boxes" class="img-sobre">
+                <div>
+                    <p class="texto-informativo">
+                        O <strong>Pista Total</strong> nasceu da paixão compartilhada por entusiastas do automobilismo
+                        para conectar fãs de todas as categorias. Oferecemos análises técnicas, cobertura de eventos de
+                        velocidade, entrevistas exclusivas com pilotos e um panorama completo do esporte a motor no
+                        Brasil e no mundo.
+                    </p>
+                    <br>
+                    <p class="texto-informativo">
+                        Acompanhe cada curva, ultrapassagem e novidade das principais categorias como Fórmula 1, Stock
+                        Car, Endurance e Kart diretamente pelo nosso portal[cite: 3].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato" class="secao-contato">
+        <div class="container">
+            <div class="titulo-secao">
+                <h2>Fale com o Portal</h2>
+                <div class="linha-vermelha"></div>
+            </div>
+            <div class="contato-info">
+                <p><strong>📍 Sede do Portal:</strong> Muriaé - MG (Av. do Automobilismo, 800)</p>
+                <p><strong>✉️ E-mail oficial:</strong> <a href="mailto:contato@pistatotal.com.br"
+                        class="link-contato">contato@pistatotal.com.br</a></p>
+                <p><strong>🕒 Expediente:</strong> Segunda a Sexta, das 09h00 às 18h00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="rodape">
+        <div class="container footer-conteudo">
+            <div class="logo">
+                <span class="icone-logo">🏁</span>
+                <div>
+                    <strong>PISTA TOTAL</strong>
+                    <p>Automobilismo e Velocidade</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Início</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#noticias">Notícias</a>
+                <a href="#video">Vídeo</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+            <p class="copyright">&copy; 2026 Pista Total. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
